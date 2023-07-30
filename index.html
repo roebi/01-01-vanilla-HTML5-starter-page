@@ -3,9 +3,10 @@
 
 <head>
   <!-- viewport to make your website look good on all devices -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- meta charset="utf-8" -->
-  <meta lang="en-US">
+  <meta name="lang" content="en-US">
   <!-- for search engines -->
   <meta name="keywords" content="HTML5 Template Page">
   <meta name="description" content="HTML5 Template with almost empty CSS and JavaScript Nodes">
@@ -19,10 +20,11 @@
       line-height: 1.625;
       /* default line-height is about 110% to 120% */
       /* 26px = 1.625 * font-size 16px */
-      /* color: "#333300"; */
-      /* https://color-hex.org/color/333300 contains mainly RED color. */
-      color: "#000033";
+      /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Applying_color */
+      /* https://www.w3schools.com/colors/colors_names.asp */
+      color: #000033;
       /* https://color-hex.org/color/000033 contains mainly BLUE color. */
+      /* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook */
     }
   </style>
   <script>
@@ -34,18 +36,28 @@
 
 <body>
 
+  <!--main structure use of common HTML5 elements -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML -->
+  <!-- https://www.w3schools.com/html/html_layout.asp -->
+  <!-- https://www.w3schools.com/html/html5_semantic_elements.asp -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories -->
+  <!-- Beginner Tip for layout your page: -->
+  <!-- use -->
+  <!-- do NOT using tables for layout -->
+  <!-- HTML tables should be used for tabular data — this is what they are designed for. -->
+  <!-- see -->
+  <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics#when_should_you_not_use_html_tables -->
+
   <header>
     <!-- header of document -->
     Header of document text.
     <hr>
-    </hr>
   </header>
 
   <nav>
     <!-- Navigation often links -->
     Navigation
     <hr>
-    </hr>
   </nav>
 
   <main>
@@ -57,42 +69,49 @@
         <!-- header of section -->
         Header text of 'section with articles'.
         <hr>
-        </hr>
       </header>
       <h2>Section with articles</h2>
       <p>This tag is used to split a page into sections like Introduction, Contact Information, Details, etc.</p>
       <p>Section defines the type of content.</p>
       <p>A section can have nested sections.</p>
       <article>
+        <header>
+          <!-- header of article -->
+          Header text of 'article in section'.
+          <hr>
+        </header>
         <h2>The article</h2>
-        <p>the article contains independent content that does not require any other context.</p>
-        <p>articles will contain the specific contents in that type of section.</p>
-        <p>but placing article inside of section is good practice.</p>
+        <p>The article contains independent content that does not require any other context.</p>
+        <p>Articles will contain the specific contents in that type of section.</p>
+        <p>But placing article inside of section is good practice.</p>
+        <footer>
+          <!-- footer of article -->
+          <hr>
+          Footer text of 'acticle in section'.
+        </footer>
       </article>
       <footer>
         <!-- footer of section -->
         <hr>
-        </hr>
         Footer text of 'section with articles'.
       </footer>
     </section>
 
     <hr>
-    </hr>
 
     <section>
       <header>
         <!-- header of section -->
         Header text of 'section with details / summary pairs'.
         <hr>
-        </hr>
       </header>
       <h2>Section with details / summary pairs</h2>
+      <p>Details can be opend and closed.</p>
       <p>Details can have nested details.</p>
-      <details open="true">
+      <details open>
         <summary>Summary of parent Detail</summary>
         Parent detail text.
-        <details open="true">
+        <details open>
           <summary>Summary of child Detail</summary>
           Child detail text.
         </details>
@@ -100,27 +119,23 @@
       <footer>
         <!-- footer of section -->
         <hr>
-        </hr>
         Footer text of 'section with details / summary pairs'.
       </footer>
     </section>
 
     <hr>
-    </hr>
 
     <aside>
       <header>
         <!-- header of aside -->
         Header text of aside.
         <hr>
-        </hr>
       </header>
       <h2>Aside</h2>
       Aside text.
       <footer>
         <!-- footer of aside -->
         <hr>
-        </hr>
         Footer text of aside.
       </footer>
     </aside>
@@ -130,7 +145,6 @@
   <footer id="footerOfDocument">
     <!-- footer of document -->
     <hr>
-    </hr>
     Footer text of document.
     <script>
       // in footer of document add autor from header meta
