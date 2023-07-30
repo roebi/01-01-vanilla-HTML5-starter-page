@@ -26,6 +26,16 @@
       /* https://color-hex.org/color/000033 contains mainly BLUE color. */
       /* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook */
     }
+
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    aside {
+      float: right;
+      background-color: lightblue;
+    }
   </style>
   <script>
     // move to src/script.js
@@ -57,7 +67,8 @@
   <nav>
     <!-- Navigation often links -->
     Navigation |
-    <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> <!--  CSS, HTML, JavaScript, and Web APIs. --> |
+    <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+    <!--  CSS, HTML, JavaScript, and Web APIs. --> |
     <a href="https://www.w3schools.com/" target="_blank">w3schools Learn to Code</a>
     <hr>
   </nav>
@@ -77,15 +88,33 @@
       <p>Section defines the type of content.</p>
       <p>A section can have nested sections.</p>
       <article>
+
         <header>
           <!-- header of article -->
           Header text of 'article in section'.
           <hr>
         </header>
+
+        <aside>
+          <header>
+            <!-- header of aside -->
+            Header text of aside.
+            <hr>
+          </header>
+          <h2>Aside</h2>
+          Aside text.
+          <footer>
+            <!-- footer of aside -->
+            <hr>
+            Footer text of aside.
+          </footer>
+        </aside>
+
         <h2>The article</h2>
         <p>The article contains independent content that does not require any other context.</p>
         <p>Articles will contain the specific contents in that type of section.</p>
         <p>But placing article inside of section is good practice.</p>
+
         <footer>
           <!-- footer of article -->
           <hr>
@@ -125,29 +154,13 @@
       </footer>
     </section>
 
-    <hr>
-
-    <aside>
-      <header>
-        <!-- header of aside -->
-        Header text of aside.
-        <hr>
-      </header>
-      <h2>Aside</h2>
-      Aside text.
-      <footer>
-        <!-- footer of aside -->
-        <hr>
-        Footer text of aside.
-      </footer>
-    </aside>
-
   </main>
 
   <footer id="footerOfDocument">
     <!-- footer of document -->
     <hr>
     Footer text of document.
+    <div>validated with: <a href="https://validator.w3.org/#validate_by_input" target="_blank">W3C Markup Validation Service</a></div>
     <script>
       // in footer of document add autor from header meta
       const author = document.getElementsByName("author")[0].getAttribute("content");
