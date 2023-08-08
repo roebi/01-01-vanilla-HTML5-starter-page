@@ -20,4 +20,6 @@ Have you ever heard of this HTML 5 tags ?
 
 then take a closer look at this template and use it for your ideas and projects!
 
-(index.html)[https://raw.githubusercontent.com/roebi/01-01-vanilla-HTML5-starter-page/master/index.html]
+go to file location [index.html](./index.html)
+
+show [inline raw content of index.html](https://raw.githubusercontent.com/roebi/01-01-vanilla-HTML5-starter-page/master/index.html)
