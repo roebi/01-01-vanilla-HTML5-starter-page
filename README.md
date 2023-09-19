@@ -13,7 +13,7 @@ Have you ever heard of this HTML 5 tags ?
       <header>
         <details>
           <summary>
-            <aside> and
+            <aside> , <hgroup> and
       <footer>
 ```
 # If not,
